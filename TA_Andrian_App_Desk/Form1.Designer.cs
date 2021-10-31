@@ -483,7 +483,7 @@ namespace TA_Andrian_App_Desk
             this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel40.Location = new System.Drawing.Point(0, 0);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(300, 260);
+            this.panel40.Size = new System.Drawing.Size(300, 220);
             this.panel40.TabIndex = 9;
             // 
             // panel41
@@ -494,9 +494,9 @@ namespace TA_Andrian_App_Desk
             this.panel41.Controls.Add(this.label78);
             this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel41.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel41.Location = new System.Drawing.Point(0, 210);
+            this.panel41.Location = new System.Drawing.Point(0, 180);
             this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(300, 50);
+            this.panel41.Size = new System.Drawing.Size(300, 40);
             this.panel41.TabIndex = 10;
             // 
             // label75
@@ -505,7 +505,7 @@ namespace TA_Andrian_App_Desk
             this.label75.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.Location = new System.Drawing.Point(192, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(45, 50);
+            this.label75.Size = new System.Drawing.Size(45, 40);
             this.label75.TabIndex = 20;
             this.label75.Text = "kWh";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -515,7 +515,7 @@ namespace TA_Andrian_App_Desk
             this.lbPltphEnergy.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbPltphEnergy.Location = new System.Drawing.Point(132, 0);
             this.lbPltphEnergy.Name = "lbPltphEnergy";
-            this.lbPltphEnergy.Size = new System.Drawing.Size(60, 50);
+            this.lbPltphEnergy.Size = new System.Drawing.Size(60, 40);
             this.lbPltphEnergy.TabIndex = 17;
             this.lbPltphEnergy.Text = "0";
             this.lbPltphEnergy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -527,7 +527,7 @@ namespace TA_Andrian_App_Desk
             this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label77.Location = new System.Drawing.Point(120, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(12, 50);
+            this.label77.Size = new System.Drawing.Size(12, 40);
             this.label77.TabIndex = 16;
             this.label77.Text = ":";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,7 +538,7 @@ namespace TA_Andrian_App_Desk
             this.label78.Location = new System.Drawing.Point(0, 0);
             this.label78.Name = "label78";
             this.label78.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label78.Size = new System.Drawing.Size(120, 50);
+            this.label78.Size = new System.Drawing.Size(120, 40);
             this.label78.TabIndex = 11;
             this.label78.Text = "Energy";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -551,9 +551,9 @@ namespace TA_Andrian_App_Desk
             this.panel42.Controls.Add(this.label82);
             this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel42.Location = new System.Drawing.Point(0, 160);
+            this.panel42.Location = new System.Drawing.Point(0, 140);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(300, 50);
+            this.panel42.Size = new System.Drawing.Size(300, 40);
             this.panel42.TabIndex = 9;
             // 
             // label79
@@ -562,7 +562,7 @@ namespace TA_Andrian_App_Desk
             this.label79.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label79.Location = new System.Drawing.Point(192, 0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(45, 50);
+            this.label79.Size = new System.Drawing.Size(45, 40);
             this.label79.TabIndex = 18;
             this.label79.Text = "W";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -572,7 +572,7 @@ namespace TA_Andrian_App_Desk
             this.lbPltphPower.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbPltphPower.Location = new System.Drawing.Point(132, 0);
             this.lbPltphPower.Name = "lbPltphPower";
-            this.lbPltphPower.Size = new System.Drawing.Size(60, 50);
+            this.lbPltphPower.Size = new System.Drawing.Size(60, 40);
             this.lbPltphPower.TabIndex = 16;
             this.lbPltphPower.Text = "0";
             this.lbPltphPower.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -584,7 +584,7 @@ namespace TA_Andrian_App_Desk
             this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label81.Location = new System.Drawing.Point(120, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(12, 50);
+            this.label81.Size = new System.Drawing.Size(12, 40);
             this.label81.TabIndex = 15;
             this.label81.Text = ":";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -595,7 +595,7 @@ namespace TA_Andrian_App_Desk
             this.label82.Location = new System.Drawing.Point(0, 0);
             this.label82.Name = "label82";
             this.label82.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label82.Size = new System.Drawing.Size(120, 50);
+            this.label82.Size = new System.Drawing.Size(120, 40);
             this.label82.TabIndex = 9;
             this.label82.Text = "Power";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -609,9 +609,9 @@ namespace TA_Andrian_App_Desk
             this.panel43.Controls.Add(this.label86);
             this.panel43.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel43.Location = new System.Drawing.Point(0, 110);
+            this.panel43.Location = new System.Drawing.Point(0, 100);
             this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(300, 50);
+            this.panel43.Size = new System.Drawing.Size(300, 40);
             this.panel43.TabIndex = 8;
             // 
             // label83
@@ -620,7 +620,7 @@ namespace TA_Andrian_App_Desk
             this.label83.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label83.Location = new System.Drawing.Point(192, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(45, 50);
+            this.label83.Size = new System.Drawing.Size(45, 40);
             this.label83.TabIndex = 17;
             this.label83.Text = "A";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -630,7 +630,7 @@ namespace TA_Andrian_App_Desk
             this.lbPltphCurrent.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbPltphCurrent.Location = new System.Drawing.Point(132, 0);
             this.lbPltphCurrent.Name = "lbPltphCurrent";
-            this.lbPltphCurrent.Size = new System.Drawing.Size(60, 50);
+            this.lbPltphCurrent.Size = new System.Drawing.Size(60, 40);
             this.lbPltphCurrent.TabIndex = 15;
             this.lbPltphCurrent.Text = "0";
             this.lbPltphCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -642,7 +642,7 @@ namespace TA_Andrian_App_Desk
             this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label85.Location = new System.Drawing.Point(120, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(12, 50);
+            this.label85.Size = new System.Drawing.Size(12, 40);
             this.label85.TabIndex = 14;
             this.label85.Text = ":";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -653,7 +653,7 @@ namespace TA_Andrian_App_Desk
             this.label86.Location = new System.Drawing.Point(0, 0);
             this.label86.Name = "label86";
             this.label86.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label86.Size = new System.Drawing.Size(120, 50);
+            this.label86.Size = new System.Drawing.Size(120, 40);
             this.label86.TabIndex = 7;
             this.label86.Text = "Current";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -669,7 +669,7 @@ namespace TA_Andrian_App_Desk
             this.panel44.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel44.Location = new System.Drawing.Point(0, 60);
             this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(300, 50);
+            this.panel44.Size = new System.Drawing.Size(300, 40);
             this.panel44.TabIndex = 3;
             // 
             // label87
@@ -678,7 +678,7 @@ namespace TA_Andrian_App_Desk
             this.label87.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.Location = new System.Drawing.Point(192, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(45, 50);
+            this.label87.Size = new System.Drawing.Size(45, 40);
             this.label87.TabIndex = 16;
             this.label87.Text = "V";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -689,7 +689,7 @@ namespace TA_Andrian_App_Desk
             this.lbPltphVoltage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPltphVoltage.Location = new System.Drawing.Point(132, 0);
             this.lbPltphVoltage.Name = "lbPltphVoltage";
-            this.lbPltphVoltage.Size = new System.Drawing.Size(60, 50);
+            this.lbPltphVoltage.Size = new System.Drawing.Size(60, 40);
             this.lbPltphVoltage.TabIndex = 15;
             this.lbPltphVoltage.Text = "0";
             this.lbPltphVoltage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -701,7 +701,7 @@ namespace TA_Andrian_App_Desk
             this.label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label89.Location = new System.Drawing.Point(120, 0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(12, 50);
+            this.label89.Size = new System.Drawing.Size(12, 40);
             this.label89.TabIndex = 13;
             this.label89.Text = ":";
             this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -714,7 +714,7 @@ namespace TA_Andrian_App_Desk
             this.label90.Location = new System.Drawing.Point(0, 0);
             this.label90.Name = "label90";
             this.label90.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label90.Size = new System.Drawing.Size(120, 50);
+            this.label90.Size = new System.Drawing.Size(120, 40);
             this.label90.TabIndex = 12;
             this.label90.Text = "Voltage";
             this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -743,7 +743,7 @@ namespace TA_Andrian_App_Desk
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(300, 260);
+            this.panel7.Size = new System.Drawing.Size(300, 220);
             this.panel7.TabIndex = 9;
             // 
             // label2
@@ -769,7 +769,7 @@ namespace TA_Andrian_App_Desk
             this.panel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.Location = new System.Drawing.Point(0, 60);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(300, 50);
+            this.panel8.Size = new System.Drawing.Size(300, 40);
             this.panel8.TabIndex = 3;
             // 
             // lbPlnVoltage
@@ -780,7 +780,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnVoltage.Location = new System.Drawing.Point(0, 0);
             this.lbPlnVoltage.Name = "lbPlnVoltage";
             this.lbPlnVoltage.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.lbPlnVoltage.Size = new System.Drawing.Size(120, 50);
+            this.lbPlnVoltage.Size = new System.Drawing.Size(120, 40);
             this.lbPlnVoltage.TabIndex = 12;
             this.lbPlnVoltage.Text = "Voltage";
             this.lbPlnVoltage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -792,7 +792,7 @@ namespace TA_Andrian_App_Desk
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label4.Location = new System.Drawing.Point(120, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 50);
+            this.label4.Size = new System.Drawing.Size(12, 40);
             this.label4.TabIndex = 13;
             this.label4.Text = ":";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -803,7 +803,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnVoltageVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPlnVoltageVal.Location = new System.Drawing.Point(132, 0);
             this.lbPlnVoltageVal.Name = "lbPlnVoltageVal";
-            this.lbPlnVoltageVal.Size = new System.Drawing.Size(60, 50);
+            this.lbPlnVoltageVal.Size = new System.Drawing.Size(60, 40);
             this.lbPlnVoltageVal.TabIndex = 15;
             this.lbPlnVoltageVal.Text = "0";
             this.lbPlnVoltageVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -814,7 +814,7 @@ namespace TA_Andrian_App_Desk
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(192, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 50);
+            this.label5.Size = new System.Drawing.Size(45, 40);
             this.label5.TabIndex = 16;
             this.label5.Text = "V";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -828,9 +828,9 @@ namespace TA_Andrian_App_Desk
             this.panel9.Controls.Add(this.lbPlnCurrent);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel9.Location = new System.Drawing.Point(0, 110);
+            this.panel9.Location = new System.Drawing.Point(0, 100);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(300, 50);
+            this.panel9.Size = new System.Drawing.Size(300, 40);
             this.panel9.TabIndex = 8;
             // 
             // lbPlnCurrent
@@ -839,7 +839,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnCurrent.Location = new System.Drawing.Point(0, 0);
             this.lbPlnCurrent.Name = "lbPlnCurrent";
             this.lbPlnCurrent.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.lbPlnCurrent.Size = new System.Drawing.Size(120, 50);
+            this.lbPlnCurrent.Size = new System.Drawing.Size(120, 40);
             this.lbPlnCurrent.TabIndex = 7;
             this.lbPlnCurrent.Text = "Current";
             this.lbPlnCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -851,7 +851,7 @@ namespace TA_Andrian_App_Desk
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label6.Location = new System.Drawing.Point(120, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(12, 50);
+            this.label6.Size = new System.Drawing.Size(12, 40);
             this.label6.TabIndex = 14;
             this.label6.Text = ":";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -861,7 +861,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnCurrentVal.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbPlnCurrentVal.Location = new System.Drawing.Point(132, 0);
             this.lbPlnCurrentVal.Name = "lbPlnCurrentVal";
-            this.lbPlnCurrentVal.Size = new System.Drawing.Size(60, 50);
+            this.lbPlnCurrentVal.Size = new System.Drawing.Size(60, 40);
             this.lbPlnCurrentVal.TabIndex = 15;
             this.lbPlnCurrentVal.Text = "0";
             this.lbPlnCurrentVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -872,7 +872,7 @@ namespace TA_Andrian_App_Desk
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(192, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 50);
+            this.label7.Size = new System.Drawing.Size(45, 40);
             this.label7.TabIndex = 17;
             this.label7.Text = "A";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -885,9 +885,9 @@ namespace TA_Andrian_App_Desk
             this.panel10.Controls.Add(this.lbPlnPower);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel10.Location = new System.Drawing.Point(0, 160);
+            this.panel10.Location = new System.Drawing.Point(0, 140);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(300, 50);
+            this.panel10.Size = new System.Drawing.Size(300, 40);
             this.panel10.TabIndex = 9;
             // 
             // lbPlnPower
@@ -896,7 +896,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnPower.Location = new System.Drawing.Point(0, 0);
             this.lbPlnPower.Name = "lbPlnPower";
             this.lbPlnPower.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.lbPlnPower.Size = new System.Drawing.Size(120, 50);
+            this.lbPlnPower.Size = new System.Drawing.Size(120, 40);
             this.lbPlnPower.TabIndex = 9;
             this.lbPlnPower.Text = "Power";
             this.lbPlnPower.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -908,7 +908,7 @@ namespace TA_Andrian_App_Desk
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label8.Location = new System.Drawing.Point(120, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(12, 50);
+            this.label8.Size = new System.Drawing.Size(12, 40);
             this.label8.TabIndex = 15;
             this.label8.Text = ":";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -918,7 +918,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnPowerVal.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbPlnPowerVal.Location = new System.Drawing.Point(132, 0);
             this.lbPlnPowerVal.Name = "lbPlnPowerVal";
-            this.lbPlnPowerVal.Size = new System.Drawing.Size(60, 50);
+            this.lbPlnPowerVal.Size = new System.Drawing.Size(60, 40);
             this.lbPlnPowerVal.TabIndex = 16;
             this.lbPlnPowerVal.Text = "0";
             this.lbPlnPowerVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -929,7 +929,7 @@ namespace TA_Andrian_App_Desk
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(192, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 50);
+            this.label9.Size = new System.Drawing.Size(45, 40);
             this.label9.TabIndex = 18;
             this.label9.Text = "W";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -942,9 +942,9 @@ namespace TA_Andrian_App_Desk
             this.panel11.Controls.Add(this.lbPlnEnergy);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel11.Location = new System.Drawing.Point(0, 210);
+            this.panel11.Location = new System.Drawing.Point(0, 180);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(300, 50);
+            this.panel11.Size = new System.Drawing.Size(300, 40);
             this.panel11.TabIndex = 10;
             // 
             // lbPlnEnergy
@@ -953,7 +953,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnEnergy.Location = new System.Drawing.Point(0, 0);
             this.lbPlnEnergy.Name = "lbPlnEnergy";
             this.lbPlnEnergy.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.lbPlnEnergy.Size = new System.Drawing.Size(120, 50);
+            this.lbPlnEnergy.Size = new System.Drawing.Size(120, 40);
             this.lbPlnEnergy.TabIndex = 11;
             this.lbPlnEnergy.Text = "Energy";
             this.lbPlnEnergy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -965,7 +965,7 @@ namespace TA_Andrian_App_Desk
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label10.Location = new System.Drawing.Point(120, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(12, 50);
+            this.label10.Size = new System.Drawing.Size(12, 40);
             this.label10.TabIndex = 16;
             this.label10.Text = ":";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -975,7 +975,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnEnergyVal.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbPlnEnergyVal.Location = new System.Drawing.Point(132, 0);
             this.lbPlnEnergyVal.Name = "lbPlnEnergyVal";
-            this.lbPlnEnergyVal.Size = new System.Drawing.Size(60, 50);
+            this.lbPlnEnergyVal.Size = new System.Drawing.Size(60, 40);
             this.lbPlnEnergyVal.TabIndex = 17;
             this.lbPlnEnergyVal.Text = "0";
             this.lbPlnEnergyVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -986,7 +986,7 @@ namespace TA_Andrian_App_Desk
             this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(192, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 50);
+            this.label11.Size = new System.Drawing.Size(45, 40);
             this.label11.TabIndex = 20;
             this.label11.Text = "kWh";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1007,7 +1007,7 @@ namespace TA_Andrian_App_Desk
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 260);
+            this.panel12.Location = new System.Drawing.Point(0, 220);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(300, 3);
             this.panel12.TabIndex = 12;
@@ -1023,7 +1023,7 @@ namespace TA_Andrian_App_Desk
             this.panel17.Controls.Add(this.panel21);
             this.panel17.Controls.Add(this.label45);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 263);
+            this.panel17.Location = new System.Drawing.Point(0, 223);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(300, 322);
             this.panel17.TabIndex = 13;
@@ -1332,7 +1332,7 @@ namespace TA_Andrian_App_Desk
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 260);
+            this.panel13.Location = new System.Drawing.Point(0, 220);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(300, 3);
             this.panel13.TabIndex = 11;
@@ -1347,9 +1347,9 @@ namespace TA_Andrian_App_Desk
             this.panel35.Controls.Add(this.panel39);
             this.panel35.Controls.Add(this.label74);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel35.Location = new System.Drawing.Point(0, 263);
+            this.panel35.Location = new System.Drawing.Point(0, 223);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(300, 260);
+            this.panel35.Size = new System.Drawing.Size(300, 220);
             this.panel35.TabIndex = 12;
             // 
             // panel36
@@ -1360,9 +1360,9 @@ namespace TA_Andrian_App_Desk
             this.panel36.Controls.Add(this.label61);
             this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel36.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel36.Location = new System.Drawing.Point(0, 210);
+            this.panel36.Location = new System.Drawing.Point(0, 180);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(300, 50);
+            this.panel36.Size = new System.Drawing.Size(300, 40);
             this.panel36.TabIndex = 10;
             // 
             // label58
@@ -1371,7 +1371,7 @@ namespace TA_Andrian_App_Desk
             this.label58.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.Location = new System.Drawing.Point(192, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(45, 50);
+            this.label58.Size = new System.Drawing.Size(45, 40);
             this.label58.TabIndex = 21;
             this.label58.Text = "kWh";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1381,7 +1381,7 @@ namespace TA_Andrian_App_Desk
             this.lbOutputEnergy.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbOutputEnergy.Location = new System.Drawing.Point(132, 0);
             this.lbOutputEnergy.Name = "lbOutputEnergy";
-            this.lbOutputEnergy.Size = new System.Drawing.Size(60, 50);
+            this.lbOutputEnergy.Size = new System.Drawing.Size(60, 40);
             this.lbOutputEnergy.TabIndex = 20;
             this.lbOutputEnergy.Text = "0";
             this.lbOutputEnergy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1393,7 +1393,7 @@ namespace TA_Andrian_App_Desk
             this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label60.Location = new System.Drawing.Point(120, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(12, 50);
+            this.label60.Size = new System.Drawing.Size(12, 40);
             this.label60.TabIndex = 16;
             this.label60.Text = ":";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1404,7 +1404,7 @@ namespace TA_Andrian_App_Desk
             this.label61.Location = new System.Drawing.Point(0, 0);
             this.label61.Name = "label61";
             this.label61.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label61.Size = new System.Drawing.Size(120, 50);
+            this.label61.Size = new System.Drawing.Size(120, 40);
             this.label61.TabIndex = 11;
             this.label61.Text = "Energy";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1417,9 +1417,9 @@ namespace TA_Andrian_App_Desk
             this.panel37.Controls.Add(this.label65);
             this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel37.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel37.Location = new System.Drawing.Point(0, 160);
+            this.panel37.Location = new System.Drawing.Point(0, 140);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(300, 50);
+            this.panel37.Size = new System.Drawing.Size(300, 40);
             this.panel37.TabIndex = 9;
             // 
             // label62
@@ -1428,7 +1428,7 @@ namespace TA_Andrian_App_Desk
             this.label62.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(192, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(45, 50);
+            this.label62.Size = new System.Drawing.Size(45, 40);
             this.label62.TabIndex = 19;
             this.label62.Text = "W";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1438,7 +1438,7 @@ namespace TA_Andrian_App_Desk
             this.lbOutputPower.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbOutputPower.Location = new System.Drawing.Point(132, 0);
             this.lbOutputPower.Name = "lbOutputPower";
-            this.lbOutputPower.Size = new System.Drawing.Size(60, 50);
+            this.lbOutputPower.Size = new System.Drawing.Size(60, 40);
             this.lbOutputPower.TabIndex = 18;
             this.lbOutputPower.Text = "0";
             this.lbOutputPower.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1450,7 +1450,7 @@ namespace TA_Andrian_App_Desk
             this.label64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label64.Location = new System.Drawing.Point(120, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(12, 50);
+            this.label64.Size = new System.Drawing.Size(12, 40);
             this.label64.TabIndex = 15;
             this.label64.Text = ":";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1461,7 +1461,7 @@ namespace TA_Andrian_App_Desk
             this.label65.Location = new System.Drawing.Point(0, 0);
             this.label65.Name = "label65";
             this.label65.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label65.Size = new System.Drawing.Size(120, 50);
+            this.label65.Size = new System.Drawing.Size(120, 40);
             this.label65.TabIndex = 9;
             this.label65.Text = "Power";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1475,9 +1475,9 @@ namespace TA_Andrian_App_Desk
             this.panel38.Controls.Add(this.label69);
             this.panel38.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel38.Location = new System.Drawing.Point(0, 110);
+            this.panel38.Location = new System.Drawing.Point(0, 100);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(300, 50);
+            this.panel38.Size = new System.Drawing.Size(300, 40);
             this.panel38.TabIndex = 8;
             // 
             // label66
@@ -1486,7 +1486,7 @@ namespace TA_Andrian_App_Desk
             this.label66.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.Location = new System.Drawing.Point(192, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(45, 50);
+            this.label66.Size = new System.Drawing.Size(45, 40);
             this.label66.TabIndex = 18;
             this.label66.Text = "A";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1496,7 +1496,7 @@ namespace TA_Andrian_App_Desk
             this.lbOutputCurrent.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbOutputCurrent.Location = new System.Drawing.Point(132, 0);
             this.lbOutputCurrent.Name = "lbOutputCurrent";
-            this.lbOutputCurrent.Size = new System.Drawing.Size(60, 50);
+            this.lbOutputCurrent.Size = new System.Drawing.Size(60, 40);
             this.lbOutputCurrent.TabIndex = 16;
             this.lbOutputCurrent.Text = "0";
             this.lbOutputCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1508,7 +1508,7 @@ namespace TA_Andrian_App_Desk
             this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label68.Location = new System.Drawing.Point(120, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(12, 50);
+            this.label68.Size = new System.Drawing.Size(12, 40);
             this.label68.TabIndex = 14;
             this.label68.Text = ":";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1519,7 +1519,7 @@ namespace TA_Andrian_App_Desk
             this.label69.Location = new System.Drawing.Point(0, 0);
             this.label69.Name = "label69";
             this.label69.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label69.Size = new System.Drawing.Size(120, 50);
+            this.label69.Size = new System.Drawing.Size(120, 40);
             this.label69.TabIndex = 7;
             this.label69.Text = "Current";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1535,7 +1535,7 @@ namespace TA_Andrian_App_Desk
             this.panel39.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel39.Location = new System.Drawing.Point(0, 60);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(300, 50);
+            this.panel39.Size = new System.Drawing.Size(300, 40);
             this.panel39.TabIndex = 3;
             // 
             // label70
@@ -1544,7 +1544,7 @@ namespace TA_Andrian_App_Desk
             this.label70.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label70.Location = new System.Drawing.Point(192, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(45, 50);
+            this.label70.Size = new System.Drawing.Size(45, 40);
             this.label70.TabIndex = 17;
             this.label70.Text = "V";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1554,7 +1554,7 @@ namespace TA_Andrian_App_Desk
             this.lbOutputVoltage.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbOutputVoltage.Location = new System.Drawing.Point(132, 0);
             this.lbOutputVoltage.Name = "lbOutputVoltage";
-            this.lbOutputVoltage.Size = new System.Drawing.Size(60, 50);
+            this.lbOutputVoltage.Size = new System.Drawing.Size(60, 40);
             this.lbOutputVoltage.TabIndex = 14;
             this.lbOutputVoltage.Text = "0";
             this.lbOutputVoltage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1566,7 +1566,7 @@ namespace TA_Andrian_App_Desk
             this.label72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.label72.Location = new System.Drawing.Point(120, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(12, 50);
+            this.label72.Size = new System.Drawing.Size(12, 40);
             this.label72.TabIndex = 13;
             this.label72.Text = ":";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1579,7 +1579,7 @@ namespace TA_Andrian_App_Desk
             this.label73.Location = new System.Drawing.Point(0, 0);
             this.label73.Name = "label73";
             this.label73.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label73.Size = new System.Drawing.Size(120, 50);
+            this.label73.Size = new System.Drawing.Size(120, 40);
             this.label73.TabIndex = 12;
             this.label73.Text = "Voltage";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1602,7 +1602,7 @@ namespace TA_Andrian_App_Desk
             this.pbPlnVolt.Image = ((System.Drawing.Image)(resources.GetObject("pbPlnVolt.Image")));
             this.pbPlnVolt.Location = new System.Drawing.Point(237, 0);
             this.pbPlnVolt.Name = "pbPlnVolt";
-            this.pbPlnVolt.Size = new System.Drawing.Size(43, 50);
+            this.pbPlnVolt.Size = new System.Drawing.Size(43, 40);
             this.pbPlnVolt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPlnVolt.TabIndex = 17;
             this.pbPlnVolt.TabStop = false;
@@ -1614,7 +1614,7 @@ namespace TA_Andrian_App_Desk
             this.pbPlnCurrent.Image = ((System.Drawing.Image)(resources.GetObject("pbPlnCurrent.Image")));
             this.pbPlnCurrent.Location = new System.Drawing.Point(237, 0);
             this.pbPlnCurrent.Name = "pbPlnCurrent";
-            this.pbPlnCurrent.Size = new System.Drawing.Size(43, 50);
+            this.pbPlnCurrent.Size = new System.Drawing.Size(43, 40);
             this.pbPlnCurrent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPlnCurrent.TabIndex = 18;
             this.pbPlnCurrent.TabStop = false;
@@ -1626,7 +1626,7 @@ namespace TA_Andrian_App_Desk
             this.pbPltphVolt.Image = ((System.Drawing.Image)(resources.GetObject("pbPltphVolt.Image")));
             this.pbPltphVolt.Location = new System.Drawing.Point(237, 0);
             this.pbPltphVolt.Name = "pbPltphVolt";
-            this.pbPltphVolt.Size = new System.Drawing.Size(43, 50);
+            this.pbPltphVolt.Size = new System.Drawing.Size(43, 40);
             this.pbPltphVolt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPltphVolt.TabIndex = 19;
             this.pbPltphVolt.TabStop = false;
@@ -1638,7 +1638,7 @@ namespace TA_Andrian_App_Desk
             this.pbPltphCurrent.Image = ((System.Drawing.Image)(resources.GetObject("pbPltphCurrent.Image")));
             this.pbPltphCurrent.Location = new System.Drawing.Point(237, 0);
             this.pbPltphCurrent.Name = "pbPltphCurrent";
-            this.pbPltphCurrent.Size = new System.Drawing.Size(43, 50);
+            this.pbPltphCurrent.Size = new System.Drawing.Size(43, 40);
             this.pbPltphCurrent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPltphCurrent.TabIndex = 20;
             this.pbPltphCurrent.TabStop = false;
@@ -1662,7 +1662,7 @@ namespace TA_Andrian_App_Desk
             this.pbOutputVolt.Image = ((System.Drawing.Image)(resources.GetObject("pbOutputVolt.Image")));
             this.pbOutputVolt.Location = new System.Drawing.Point(237, 0);
             this.pbOutputVolt.Name = "pbOutputVolt";
-            this.pbOutputVolt.Size = new System.Drawing.Size(43, 50);
+            this.pbOutputVolt.Size = new System.Drawing.Size(43, 40);
             this.pbOutputVolt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbOutputVolt.TabIndex = 21;
             this.pbOutputVolt.TabStop = false;
@@ -1674,7 +1674,7 @@ namespace TA_Andrian_App_Desk
             this.pbOutputCurrent.Image = ((System.Drawing.Image)(resources.GetObject("pbOutputCurrent.Image")));
             this.pbOutputCurrent.Location = new System.Drawing.Point(237, 0);
             this.pbOutputCurrent.Name = "pbOutputCurrent";
-            this.pbOutputCurrent.Size = new System.Drawing.Size(43, 50);
+            this.pbOutputCurrent.Size = new System.Drawing.Size(43, 40);
             this.pbOutputCurrent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbOutputCurrent.TabIndex = 21;
             this.pbOutputCurrent.TabStop = false;

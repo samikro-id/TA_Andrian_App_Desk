@@ -423,23 +423,6 @@ namespace TA_Andrian_App_Desk
             send_data(cmd_source_pltph);
         }
 
-        private void btRefreshChart_Click(object sender, EventArgs e)
-        {
-            // https://api.thingspeak.com/channels/1476079/charts/1?yaxismin=-2&yaxismax=2&days=1&height=0&width=0
-        }
-
-        private void label32_Click(object sender, EventArgs e)
-        {
-            if(lbProtection.Text == "OFF")
-            {
-                send_data(cmd_protec_on);
-            }
-            else
-            {
-                send_data(cmd_protec_off);
-            }
-        }
-
         private void fmMain_Shown(object sender, EventArgs e)
         {
             cbSerial_refresh();
@@ -448,6 +431,53 @@ namespace TA_Andrian_App_Desk
         private void cbSerial_DropDown(object sender, EventArgs e)
         {
             cbSerial_refresh();
+        }
+
+        private void pbPlnVolt_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/1?yaxismin=0&yaxismax=250&days=1&height=0&width=0");
+        }
+
+        private void pbPlnCurrent_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/3?yaxismin=-2&yaxismax=2&days=1&height=0&width=0");
+        }
+
+        private void pbPltphVolt_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/6?yaxismin=0&yaxismax=250&days=1&height=0&width=0");
+        }
+
+        private void pbPltphCurrent_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/7?yaxismin=-2&yaxismax=2&days=1&height=0&width=0");
+        }
+
+        private void pbOutputVolt_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/2?yaxismin=0&yaxismax=250&days=1&height=0&width=0");
+        }
+
+        private void pbOutputCurrent_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/4?yaxismin=-2&yaxismax=2&days=1&height=0&width=0");
+        }
+
+        private void pbTemperature_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/5?height=0&width=0");
+        }
+
+        private void label32_Click_1(object sender, EventArgs e)
+        {
+            if (lbProtection.Text == "OFF")
+            {
+                send_data(cmd_protec_on);
+            }
+            else
+            {
+                send_data(cmd_protec_off);
+            }
         }
     }
 }

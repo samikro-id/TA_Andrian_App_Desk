@@ -34,6 +34,8 @@ namespace TA_Andrian_App_Desk
         private const string cmd_source_pltph = "SET|SOURCE|PLTPH";
         private const string cmd_protec_on = "SET|PROTEC|ON";
         private const string cmd_protec_off = "SET|PROTEC|OFF";
+        private const string cmd_param_get = "GET|PARAM";
+        private const string cmd_param_set = "SET|PARAM|";
 
         public fmMain()
         {
@@ -296,7 +298,7 @@ namespace TA_Andrian_App_Desk
                     lbOverTemp.Text = (parsing[17] == "1") ? "ON" : "OFF";
                     lbLowVolt.Text = (parsing[18] == "1") ? "ON" : "OFF";
 
-
+                    //send_data(cmd_param_get);
                 }
                 else if (parsing[0] == "SOURCE")
                 {
@@ -305,6 +307,12 @@ namespace TA_Andrian_App_Desk
                 else if(parsing[0] == "PROTEC")
                 {
                     lbProtection.Text = parsing[1];
+                }
+                else if(parsing[0] == "PARAM")
+                {
+                    tbVoltThresh.Text = parsing[1];
+                    tbCurrentThresh.Text = parsing[2];
+                    tbTempThresh.Text = parsing[3];
                 }
             }
             catch (Exception e)
@@ -320,6 +328,15 @@ namespace TA_Andrian_App_Desk
 
         private void send_data(string data)
         {
+            if (data == cmd_param_set)
+            {
+                data += tbVoltThresh.Text;
+                data += "|";
+                data += tbCurrentThresh.Text;
+                data += "|";
+                data += tbTempThresh.Text;
+            }
+
             if (rbInternet.Checked)
             {
                 publishMqtt(data);
@@ -478,6 +495,19 @@ namespace TA_Andrian_App_Desk
             {
                 send_data(cmd_protec_off);
             }
+        }
+
+        private void btSet_Click(object sender, EventArgs e)
+        {
+            if(tbVoltThresh.Text == "" || tbCurrentThresh.Text == "" || tbTempThresh.Text == "")
+            {
+                send_data(cmd_param_get);
+            }
+            else
+            {
+                send_data(cmd_param_set);
+            }
+            
         }
     }
 }

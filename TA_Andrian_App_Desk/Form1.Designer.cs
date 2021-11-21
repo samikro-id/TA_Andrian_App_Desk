@@ -33,9 +33,13 @@ namespace TA_Andrian_App_Desk
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmMain));
             this.tmUpdateData = new System.Windows.Forms.Timer(this.components);
             this.plMenu = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.btExit = new System.Windows.Forms.Button();
             this.plButton = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.tbVoltThresh = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.tbCurrentThresh = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.btData = new System.Windows.Forms.Button();
             this.btPltph = new System.Windows.Forms.Button();
             this.btPln = new System.Windows.Forms.Button();
@@ -128,6 +132,7 @@ namespace TA_Andrian_App_Desk
             this.lbPlnVoltage = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btExit = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.lbOverTemp = new System.Windows.Forms.Label();
@@ -157,9 +162,14 @@ namespace TA_Andrian_App_Desk
             this.label24 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.tbTempThresh = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.btSet = new System.Windows.Forms.Button();
             this.plMenu.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.plButton.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.plSetting.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -195,6 +205,7 @@ namespace TA_Andrian_App_Desk
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTemperature)).BeginInit();
             this.panel21.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // tmUpdateData
@@ -205,7 +216,6 @@ namespace TA_Andrian_App_Desk
             // plMenu
             // 
             this.plMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
-            this.plMenu.Controls.Add(this.panel25);
             this.plMenu.Controls.Add(this.plButton);
             this.plMenu.Controls.Add(this.btStartStop);
             this.plMenu.Controls.Add(this.plSetting);
@@ -218,42 +228,79 @@ namespace TA_Andrian_App_Desk
             this.plMenu.Size = new System.Drawing.Size(200, 598);
             this.plMenu.TabIndex = 3;
             // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.btExit);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel25.Location = new System.Drawing.Point(0, 538);
-            this.panel25.Name = "panel25";
-            this.panel25.Padding = new System.Windows.Forms.Padding(10);
-            this.panel25.Size = new System.Drawing.Size(200, 60);
-            this.panel25.TabIndex = 28;
-            // 
-            // btExit
-            // 
-            this.btExit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btExit.FlatAppearance.BorderSize = 0;
-            this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btExit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExit.ForeColor = System.Drawing.Color.White;
-            this.btExit.Location = new System.Drawing.Point(10, 10);
-            this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(180, 40);
-            this.btExit.TabIndex = 22;
-            this.btExit.Text = "EXIT";
-            this.btExit.UseVisualStyleBackColor = true;
-            this.btExit.Click += new System.EventHandler(this.btExit_Click);
-            // 
             // plButton
             // 
+            this.plButton.Controls.Add(this.btSet);
+            this.plButton.Controls.Add(this.panel14);
+            this.plButton.Controls.Add(this.panel6);
+            this.plButton.Controls.Add(this.panel3);
             this.plButton.Controls.Add(this.btData);
             this.plButton.Controls.Add(this.btPltph);
             this.plButton.Controls.Add(this.btPln);
             this.plButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.plButton.Enabled = false;
-            this.plButton.Location = new System.Drawing.Point(0, 315);
+            this.plButton.Location = new System.Drawing.Point(0, 285);
             this.plButton.Name = "plButton";
-            this.plButton.Size = new System.Drawing.Size(200, 217);
+            this.plButton.Size = new System.Drawing.Size(200, 308);
             this.plButton.TabIndex = 27;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.tbVoltThresh);
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 160);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 40);
+            this.panel6.TabIndex = 24;
+            // 
+            // tbVoltThresh
+            // 
+            this.tbVoltThresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbVoltThresh.Location = new System.Drawing.Point(90, 8);
+            this.tbVoltThresh.Name = "tbVoltThresh";
+            this.tbVoltThresh.Size = new System.Drawing.Size(100, 26);
+            this.tbVoltThresh.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 40);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Volt :";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.tbCurrentThresh);
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 120);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 40);
+            this.panel3.TabIndex = 23;
+            // 
+            // tbCurrentThresh
+            // 
+            this.tbCurrentThresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCurrentThresh.Location = new System.Drawing.Point(90, 8);
+            this.tbCurrentThresh.Name = "tbCurrentThresh";
+            this.tbCurrentThresh.Size = new System.Drawing.Size(100, 26);
+            this.tbCurrentThresh.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(0, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 40);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Current :";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btData
             // 
@@ -262,9 +309,9 @@ namespace TA_Andrian_App_Desk
             this.btData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btData.ForeColor = System.Drawing.Color.White;
-            this.btData.Location = new System.Drawing.Point(0, 100);
+            this.btData.Location = new System.Drawing.Point(0, 80);
             this.btData.Name = "btData";
-            this.btData.Size = new System.Drawing.Size(200, 50);
+            this.btData.Size = new System.Drawing.Size(200, 40);
             this.btData.TabIndex = 22;
             this.btData.Text = "REQUEST DATA";
             this.btData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,9 +325,9 @@ namespace TA_Andrian_App_Desk
             this.btPltph.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPltph.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPltph.ForeColor = System.Drawing.Color.White;
-            this.btPltph.Location = new System.Drawing.Point(0, 50);
+            this.btPltph.Location = new System.Drawing.Point(0, 40);
             this.btPltph.Name = "btPltph";
-            this.btPltph.Size = new System.Drawing.Size(200, 50);
+            this.btPltph.Size = new System.Drawing.Size(200, 40);
             this.btPltph.TabIndex = 21;
             this.btPltph.Text = "PLTPH";
             this.btPltph.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,7 +343,7 @@ namespace TA_Andrian_App_Desk
             this.btPln.ForeColor = System.Drawing.Color.White;
             this.btPln.Location = new System.Drawing.Point(0, 0);
             this.btPln.Name = "btPln";
-            this.btPln.Size = new System.Drawing.Size(200, 50);
+            this.btPln.Size = new System.Drawing.Size(200, 40);
             this.btPln.TabIndex = 20;
             this.btPln.Text = "PLN";
             this.btPln.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -310,9 +357,9 @@ namespace TA_Andrian_App_Desk
             this.btStartStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btStartStop.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btStartStop.ForeColor = System.Drawing.Color.White;
-            this.btStartStop.Location = new System.Drawing.Point(0, 265);
+            this.btStartStop.Location = new System.Drawing.Point(0, 245);
             this.btStartStop.Name = "btStartStop";
-            this.btStartStop.Size = new System.Drawing.Size(200, 50);
+            this.btStartStop.Size = new System.Drawing.Size(200, 40);
             this.btStartStop.TabIndex = 26;
             this.btStartStop.Text = "START";
             this.btStartStop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -329,7 +376,7 @@ namespace TA_Andrian_App_Desk
             this.plSetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.plSetting.Location = new System.Drawing.Point(0, 65);
             this.plSetting.Name = "plSetting";
-            this.plSetting.Size = new System.Drawing.Size(200, 200);
+            this.plSetting.Size = new System.Drawing.Size(200, 180);
             this.plSetting.TabIndex = 25;
             // 
             // panel28
@@ -339,7 +386,7 @@ namespace TA_Andrian_App_Desk
             this.panel28.Location = new System.Drawing.Point(0, 120);
             this.panel28.Name = "panel28";
             this.panel28.Padding = new System.Windows.Forms.Padding(10);
-            this.panel28.Size = new System.Drawing.Size(200, 75);
+            this.panel28.Size = new System.Drawing.Size(200, 60);
             this.panel28.TabIndex = 8;
             // 
             // lbNotification
@@ -348,7 +395,7 @@ namespace TA_Andrian_App_Desk
             this.lbNotification.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNotification.Location = new System.Drawing.Point(10, 10);
             this.lbNotification.Name = "lbNotification";
-            this.lbNotification.Size = new System.Drawing.Size(180, 55);
+            this.lbNotification.Size = new System.Drawing.Size(180, 40);
             this.lbNotification.TabIndex = 0;
             this.lbNotification.Text = "NOTIFICATION";
             this.lbNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1333,6 +1380,7 @@ namespace TA_Andrian_App_Desk
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btExit);
             this.panel4.Controls.Add(this.panel17);
             this.panel4.Controls.Add(this.panel12);
             this.panel4.Controls.Add(this.panel7);
@@ -1342,6 +1390,20 @@ namespace TA_Andrian_App_Desk
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(300, 598);
             this.panel4.TabIndex = 8;
+            // 
+            // btExit
+            // 
+            this.btExit.FlatAppearance.BorderSize = 0;
+            this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
+            this.btExit.Location = new System.Drawing.Point(57, 551);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(180, 42);
+            this.btExit.TabIndex = 23;
+            this.btExit.Text = "EXIT";
+            this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // panel17
             // 
@@ -1680,6 +1742,51 @@ namespace TA_Andrian_App_Desk
             this.panel12.Size = new System.Drawing.Size(300, 3);
             this.panel12.TabIndex = 12;
             // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.tbTempThresh);
+            this.panel14.Controls.Add(this.label18);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel14.Location = new System.Drawing.Point(0, 200);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(200, 40);
+            this.panel14.TabIndex = 26;
+            // 
+            // tbTempThresh
+            // 
+            this.tbTempThresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTempThresh.Location = new System.Drawing.Point(90, 8);
+            this.tbTempThresh.Name = "tbTempThresh";
+            this.tbTempThresh.Size = new System.Drawing.Size(100, 26);
+            this.tbTempThresh.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label18.Location = new System.Drawing.Point(0, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(85, 40);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Temp :";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btSet
+            // 
+            this.btSet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btSet.FlatAppearance.BorderSize = 0;
+            this.btSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSet.ForeColor = System.Drawing.Color.White;
+            this.btSet.Location = new System.Drawing.Point(0, 240);
+            this.btSet.Name = "btSet";
+            this.btSet.Size = new System.Drawing.Size(200, 40);
+            this.btSet.TabIndex = 31;
+            this.btSet.Text = "SET";
+            this.btSet.UseVisualStyleBackColor = true;
+            this.btSet.Click += new System.EventHandler(this.btSet_Click);
+            // 
             // fmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -1697,8 +1804,11 @@ namespace TA_Andrian_App_Desk
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Shown += new System.EventHandler(this.fmMain_Shown);
             this.plMenu.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
             this.plButton.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.plSetting.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
@@ -1736,6 +1846,8 @@ namespace TA_Andrian_App_Desk
             this.panel20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbTemperature)).EndInit();
             this.panel21.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1743,11 +1855,9 @@ namespace TA_Andrian_App_Desk
         #endregion
         private System.Windows.Forms.Timer tmUpdateData;
         private System.Windows.Forms.Panel plMenu;
-        private System.Windows.Forms.Button btExit;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel plSetting;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.ComboBox cbSerial;
         private System.Windows.Forms.RadioButton rbSerial;
         private System.Windows.Forms.RadioButton rbInternet;
         private System.Windows.Forms.Label lbCom;
@@ -1755,7 +1865,6 @@ namespace TA_Andrian_App_Desk
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btStartStop;
-        private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel plButton;
         private System.Windows.Forms.Button btData;
         private System.Windows.Forms.Button btPltph;
@@ -1867,6 +1976,18 @@ namespace TA_Andrian_App_Desk
         private System.Windows.Forms.PictureBox pbOutputVolt;
         private System.Windows.Forms.PictureBox pbPltphCurrent;
         private System.Windows.Forms.PictureBox pbTemperature;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox tbVoltThresh;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox tbCurrentThresh;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cbSerial;
+        private System.Windows.Forms.Button btExit;
+        private System.Windows.Forms.Button btSet;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.TextBox tbTempThresh;
+        private System.Windows.Forms.Label label18;
     }
 }
 

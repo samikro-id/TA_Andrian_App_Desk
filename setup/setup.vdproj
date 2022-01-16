@@ -304,9 +304,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:setup"
+        "ProductName" = "8:TA_Andrian_App_Desk"
         "ProductCode" = "8:{364DCA70-DCCF-4365-A058-A5252DD1CC3C}"
-        "PackageCode" = "8:{FDD7DB13-2FAC-40AB-89BE-B30B7CF1192A}"
+        "PackageCode" = "8:{8439BE10-DD80-428B-82C8-2E960BF74144}"
         "UpgradeCode" = "8:{ABEC68B0-1605-4C8B-B734-909C8A6437F5}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"

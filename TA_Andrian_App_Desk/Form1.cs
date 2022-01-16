@@ -12,6 +12,10 @@ using MQTTnet;
 using MQTTnet.Client;
 using MQTTnet.Client.Options;
 using System.IO.Ports;
+using System.IO;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace TA_Andrian_App_Desk
 {
@@ -36,6 +40,14 @@ namespace TA_Andrian_App_Desk
         private const string cmd_protec_off = "SET|PROTEC|OFF";
         private const string cmd_param_get = "GET|PARAM";
         private const string cmd_param_set = "SET|PARAM|";
+
+        public class SearchResult
+        {
+            public string created_at { get; set; }
+            public string field2 { get; set; }
+            public string field4 { get; set; }
+            public string field5 { get; set; }
+        }
 
         public fmMain()
         {
@@ -79,8 +91,6 @@ namespace TA_Andrian_App_Desk
             SubscribeAsync("samikro/data/project/3");
 
             btStartStop.Text = stop_form;
-            plSetting.Enabled = false;
-            plButton.Enabled = true;
             tmUpdateData.Enabled = true;
         }
 
@@ -89,8 +99,6 @@ namespace TA_Andrian_App_Desk
             Console.WriteLine("Mqtt Disconnect");
 
             btStartStop.Text = start_form;
-            plButton.Enabled = false;
-            plSetting.Enabled = true;
             tmUpdateData.Enabled = false;
         }
 
@@ -266,25 +274,21 @@ namespace TA_Andrian_App_Desk
                     {
                         lbPlnVoltageVal.Text = parsing[2];
                         lbPlnCurrentVal.Text = parsing[3];
-                        lbPlnPowerVal.Text = parsing[4];
-                        lbPlnEnergyVal.Text = parsing[7];
+                        
 
                         lbPltphVoltage.Text = "0";
                         lbPltphCurrent.Text = "0";
-                        lbPltphPower.Text = "0";
-                        lbPltphEnergy.Text = "0";
+                        
                     }
                     else
                     {
                         lbPlnVoltageVal.Text = "0";
                         lbPlnCurrentVal.Text = "0";
-                        lbPlnPowerVal.Text = "0";
-                        lbPlnEnergyVal.Text = "0";
+                        
 
                         lbPltphVoltage.Text = parsing[2];
                         lbPltphCurrent.Text = parsing[3];
-                        lbPltphPower.Text = parsing[4];
-                        lbPltphEnergy.Text = parsing[7];
+                        
                     }
 
                     lbOutputVoltage.Text = parsing[8];
@@ -391,8 +395,7 @@ namespace TA_Andrian_App_Desk
 
                 if(btStartStop.Text == stop_form)
                 {
-                    plSetting.Enabled = false;
-                    plButton.Enabled = true;
+                    
                     tmUpdateData.Enabled = true;
                 }
             }
@@ -418,8 +421,6 @@ namespace TA_Andrian_App_Desk
 
                 if (btStartStop.Text == start_form)
                 {
-                    plSetting.Enabled = true;
-                    plButton.Enabled = false;
                     tmUpdateData.Enabled = false;
                 }
             }
@@ -443,6 +444,7 @@ namespace TA_Andrian_App_Desk
         private void fmMain_Shown(object sender, EventArgs e)
         {
             cbSerial_refresh();
+            load_chart();
         }
 
         private void cbSerial_DropDown(object sender, EventArgs e)
@@ -485,7 +487,7 @@ namespace TA_Andrian_App_Desk
             System.Diagnostics.Process.Start("https://api.thingspeak.com/channels/1476079/charts/5?height=0&width=0");
         }
 
-        private void label32_Click_1(object sender, EventArgs e)
+        private void label32_Click(object sender, EventArgs e)
         {
             if (lbProtection.Text == "OFF")
             {
@@ -508,6 +510,79 @@ namespace TA_Andrian_App_Desk
                 send_data(cmd_param_set);
             }
             
+        }
+
+        private void btRefresh_Click(object sender, EventArgs e)
+        {
+            load_chart();
+        }
+
+        private void load_chart()
+        {
+            string sURL;
+            sURL = "https://api.thingspeak.com/channels/1476079/feeds.json?days=1";
+
+            WebRequest wrGETURL;
+            wrGETURL = WebRequest.Create(sURL);
+
+            WebProxy myProxy = new WebProxy("myproxy", 443);
+            myProxy.BypassProxyOnLocal = true;
+
+            wrGETURL.Proxy = WebProxy.GetDefaultProxy();
+
+            Stream objStream;
+            objStream = wrGETURL.GetResponse().GetResponseStream();
+
+            StreamReader objReader = new StreamReader(objStream);
+
+            string sLine = "";
+            int i = 0;
+
+            while (sLine != null)
+            {
+                i++;
+                sLine = objReader.ReadLine();
+                if (sLine != null)
+                {
+                    Console.WriteLine("{0}:{1}", i, sLine);
+
+                    JObject myJObject = JObject.Parse(sLine);
+
+                    IList<JToken> results = myJObject["feeds"].Children().ToList();
+
+                    IList<SearchResult> searchResults = new List<SearchResult>();
+                    foreach (JToken result in results)
+                    {
+                        SearchResult searchResult = JsonConvert.DeserializeObject<SearchResult>(result.ToString());
+                        searchResults.Add(searchResult);
+                    }
+
+                    foreach (SearchResult item in searchResults)
+                    {
+                        DateTime dateTime = DateTime.Parse(item.created_at);
+                        dateTime = dateTime.AddHours(7);
+
+                        string dt = dateTime.ToLongTimeString();
+
+                        chart1.Series["Voltage Output"].Points.AddXY(dt, item.field2);
+                        chart2.Series["Current Output"].Points.AddXY(dt, item.field4);
+                        chart3.Series["Temperature"].Points.AddXY(dt, item.field5);
+                    }
+
+                    if(results.Count == 0)
+                    {
+                        load_chart_dummy();
+                    }
+                }
+
+            }
+        }
+
+        private void load_chart_dummy()
+        {
+            chart1.Series["Voltage Output"].Points.AddXY(0, 0);
+            chart2.Series["Current Output"].Points.AddXY(0, 0);
+            chart3.Series["Temperature"].Points.AddXY(0, 0);
         }
     }
 }

@@ -538,6 +538,10 @@ namespace TA_Andrian_App_Desk
             string sLine = "";
             int i = 0;
 
+            chart1.Series["Voltage Output"].Points.Clear();
+            chart2.Series["Current Output"].Points.Clear();
+            chart3.Series["Temperature"].Points.Clear();
+
             while (sLine != null)
             {
                 i++;
@@ -560,7 +564,7 @@ namespace TA_Andrian_App_Desk
                     foreach (SearchResult item in searchResults)
                     {
                         DateTime dateTime = DateTime.Parse(item.created_at);
-                        dateTime = dateTime.AddHours(7);
+                        //dateTime = dateTime.AddHours(7);
 
                         string dt = dateTime.ToLongTimeString();
 

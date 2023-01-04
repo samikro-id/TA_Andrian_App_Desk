@@ -268,7 +268,7 @@ namespace TA_Andrian_App_Desk
                 {
                     lbTemperatureVal.Text = parsing[1];
 
-                    lbSource.Text = (parsing[14] == "1") ? "PLN" : "PLTPH";
+                    lbSource.Text = (parsing[14] == "1") ? "PLN" : "PLTS";
 
                     if(parsing[14] == "1")
                     {

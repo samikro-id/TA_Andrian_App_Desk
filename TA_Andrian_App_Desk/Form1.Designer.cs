@@ -509,7 +509,7 @@ namespace TA_Andrian_App_Desk
             this.panel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
             this.panel12.Location = new System.Drawing.Point(0, 151);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(411, 621);
+            this.panel12.Size = new System.Drawing.Size(411, 747);
             this.panel12.TabIndex = 36;
             // 
             // panel16
@@ -1492,7 +1492,7 @@ namespace TA_Andrian_App_Desk
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel11.Location = new System.Drawing.Point(411, 151);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(3, 621);
+            this.panel11.Size = new System.Drawing.Size(3, 747);
             this.panel11.TabIndex = 37;
             // 
             // panel26
@@ -1611,8 +1611,9 @@ namespace TA_Andrian_App_Desk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1078, 772);
+            this.ClientSize = new System.Drawing.Size(1078, 898);
             this.ControlBox = false;
             this.Controls.Add(this.panel26);
             this.Controls.Add(this.panel11);

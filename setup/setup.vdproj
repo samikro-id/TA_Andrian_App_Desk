@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_012605BB7BECA26F9ADA12C02345BBEF"
-        "OwnerKey" = "8:_C5D42C90B75F4BC6808B26F05759E78C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A93141A7B62CE6D3EAAB6F1B4212AA9D"
-        "OwnerKey" = "8:_C5D42C90B75F4BC6808B26F05759E78C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C5D42C90B75F4BC6808B26F05759E78C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -39,6 +27,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D6DB1D377F5C9CC8260212402F081F00"
+        "OwnerKey" = "8:_C5D42C90B75F4BC6808B26F05759E78C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F142F4D0EA4FF59E699639065749A407"
+        "OwnerKey" = "8:_C5D42C90B75F4BC6808B26F05759E78C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_C5D42C90B75F4BC6808B26F05759E78C"
         "MsmSig" = "8:_UNDEFINED"
@@ -46,13 +46,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_012605BB7BECA26F9ADA12C02345BBEF"
+        "OwnerKey" = "8:_F142F4D0EA4FF59E699639065749A407"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A93141A7B62CE6D3EAAB6F1B4212AA9D"
+        "OwnerKey" = "8:_D6DB1D377F5C9CC8260212402F081F00"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -156,20 +156,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_012605BB7BECA26F9ADA12C02345BBEF"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D5D5D88677E67534008F434CD6B034C2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_012605BB7BECA26F9ADA12C02345BBEF"
+                    "_D5D5D88677E67534008F434CD6B034C2"
                     {
-                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Newtonsoft.Json.dll"
+            "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_332B4631CA0D404FB65656EE4A423426"
@@ -187,14 +187,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A93141A7B62CE6D3EAAB6F1B4212AA9D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D6DB1D377F5C9CC8260212402F081F00"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MQTTnet, Version=3.0.16.0, Culture=neutral, PublicKeyToken=b69712f52770c0a7, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A93141A7B62CE6D3EAAB6F1B4212AA9D"
+                    "_D6DB1D377F5C9CC8260212402F081F00"
                     {
                     "Name" = "8:MQTTnet.dll"
                     "Attributes" = "3:512"
@@ -218,20 +218,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D5D5D88677E67534008F434CD6B034C2"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F142F4D0EA4FF59E699639065749A407"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D5D5D88677E67534008F434CD6B034C2"
+                    "_F142F4D0EA4FF59E699639065749A407"
                     {
-                    "Name" = "8:System.Net.Http.dll"
+                    "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:System.Net.Http.dll"
+            "SourcePath" = "8:Newtonsoft.Json.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_332B4631CA0D404FB65656EE4A423426"
@@ -305,15 +305,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TA_Andrian_App_Desk"
-        "ProductCode" = "8:{D391264B-16AD-47DD-9E43-A157FC642973}"
-        "PackageCode" = "8:{AEDD6C61-30D7-44E1-805C-8EE5E646625D}"
+        "ProductCode" = "8:{A6F9CE84-45D0-41B2-A4C9-D5D815FFE65E}"
+        "PackageCode" = "8:{A761BD95-4D67-4688-8031-30A059CEC672}"
         "UpgradeCode" = "8:{ABEC68B0-1605-4C8B-B734-909C8A6437F5}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.2"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:samikro.id"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
